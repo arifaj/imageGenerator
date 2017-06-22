@@ -1,0 +1,41 @@
+#mainStage{
+	padding: 30px;
+}
+
+#stages{
+	margin-top: 30px;
+
+	.tools{
+		background: $flat-gray-1;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 30px;
+
+		button{
+			
+			padding: 5px 0;
+		}
+	}
+
+	.canvasWrapper{
+		text-align: center;
+	}
+}
+
+.canvas{
+	background: $flat-gray-2;
+	overflow: hidden;
+}
+
+#canvasEmail{
+	width: 600px;
+	height: 400px;
+}
+#canvasRedesSociais{
+	width: 840px;
+	height: 440px;
+}
+#canvasBannerPortal{
+	width: 745px;
+	height: 200px;
+}

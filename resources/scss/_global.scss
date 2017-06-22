@@ -1,4 +1,14 @@
 #main{
 	min-height: 100vh;
-	background: gray;
 }
+
+input[type="range"], button{
+	cursor: pointer;
+}
+
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+a, a:hover, a:active, a:focus, a:visited{text-decoration: none;}

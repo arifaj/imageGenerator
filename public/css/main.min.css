@@ -1,11 +1,41 @@
-#main { min-height: 100vh; background: gray; }
+#main { min-height: 100vh; }
+
+input[type="range"], button { cursor: pointer; }
+
+.navbar { border-radius: 0; margin-bottom: 0; }
+
+a, a:hover, a:active, a:focus, a:visited { text-decoration: none; }
 
 #header { background: black; display: none; }
 
-#sidebar { background: lightgray; padding-left: 0; padding-right: 0; }
+#sidebar { min-height: calc(100vh - 52px); background: #222; padding: 0; }
 
-#sidebar .card .card-header { padding: 0; }
+#sidebar #accordion .card .card-header h5 { margin: 0; }
 
-#sidebar .card .card-header h5 a { display: block; padding: 15px; }
+#sidebar #accordion .card .card-header h5 a { display: block; padding: 15px; color: #7F8C8D; }
+
+#sidebar #accordion .card .card-header h5 a:hover { background: black; text-decoration: none; color: white; }
+
+#sidebar #accordion .card .card-header h5 a[aria-expanded="true"] { background: black; text-decoration: none; color: white; border-bottom: solid 1px #222; }
+
+#sidebar #accordion .card .card-block { padding: 15px; color: white; background: #1a1a1a; }
+
+#mainStage { padding: 30px; }
+
+#stages { margin-top: 30px; }
+
+#stages .tools { background: #ECF0F1; padding-top: 15px; padding-bottom: 15px; margin-bottom: 30px; }
+
+#stages .tools button { padding: 5px 0; }
+
+#stages .canvasWrapper { text-align: center; }
+
+.canvas { background: #BDC3C7; overflow: hidden; }
+
+#canvasEmail { width: 600px; height: 400px; }
+
+#canvasRedesSociais { width: 840px; height: 440px; }
+
+#canvasBannerPortal { width: 745px; height: 200px; }
 
 /*# sourceMappingURL=main.min.css.map */

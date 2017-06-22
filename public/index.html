@@ -3,13 +3,200 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Image Generator</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/main.min.css">
+
+	<script src="https://use.fontawesome.com/95fdffb7a9.js"></script>
+
 </head>
 <body>
 
-<div class="container-fluid">
+<div id="wrapper">
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">
+			Gerador de imagens para redes sociais
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="navbar-form btn-group navbar-right" role="group" aria-label="...">
+	      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Carregar</button>
+	      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> Salvar</button>
+	    </div>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class="container-fluid">
+		<div class="row" id="mainArea">
+			<div class="col-xs-2" id="sidebar">
+				<!--SIDEBAR-->
+
+					<div id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="card">
+						<div class="card-header" role="tab" id="headingOne">
+							<h5 class="mb-0">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<span class="glyphicon glyphicon-th" aria-hidden="true"></span> Formato
+								</a>
+							</h5>
+						</div>
+
+						<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+							<div class="card-block" id="selectFormat">
+								<input type="checkbox" name="selectFormat" id="selectFormatEmail" value="selectFormatEmail">
+								<label for="selectFormatEmail">
+								E-mail
+								</label>
+								<br>
+								<input type="checkbox" name="selectFormat" id="selectFormatRedesSociais" value="selectFormatRedesSociais">
+								<label for="selectFormatRedesSociais">
+								Redes Sociais
+								</label>
+								<br>
+								<input type="checkbox" name="selectFormat" id="selectFormatBannerPortal" value="selectFormatBannerPortal" checked>
+								<label for="selectFormatBannerPortal">
+								Banner Portal
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header" role="tab" id="headingTwo">
+							<h5 class="mb-0">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Imagem
+								</a>
+							</h5>
+						</div>
+					<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="card-block">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					</div>
+					</div>
+					</div>
+					<div class="card">
+					<div class="card-header" role="tab" id="headingThree">
+					<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+					<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Área
+					</a>
+					</h5>
+					</div>
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="card-block">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					</div>
+					</div>
+					</div>
+					<div class="card">
+					<div class="card-header" role="tab" id="headingFour">
+					<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+					<span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Cor
+					</a>
+					</h5>
+					</div>
+					<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+					<div class="card-block">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					</div>
+					</div>
+					</div>
+					</div>
+			</div>
+			
+			<div class="col-xs-10" id="mainStage">
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="..." id="menuFormats">
+						  <a class="btn btn-default">E-mail</a>
+						  <a class="btn btn-default">Redes Sociais</a>
+						  <a class="btn btn-default">Banner Portal</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12" id="stages">
+						<div id="emailStage">
+							<div class="col-xs-12 tools" id="emailTools">
+								<button class="tool col-xs-3" id="emailFlipHorizontal">Virar horizontalmente</button>
+								<button class="tool col-xs-3" id="emailFlipVertical">Virar Verticalmente</button>
+								<div class="tool col-xs-3" id="scaleRange">
+									<label for="">Redimensionar</label>
+									<input type="range">
+								</div>
+								<div class="tool col-xs-3" id="rotateRange">
+									<label for="">Rotacionar</label>
+									<input type="range">
+								</div>
+							</div>
+							<div class="col-xs-12 canvasWrapper">
+								<canvas class="canvas" id="canvasEmail"></canvas>
+							</div>
+						</div>
+<!--
+						<div id="redeSociaisStage">
+							<div class="col-xs-4 tools" id="redeSociaisTools">
+								<button class="tool" id="emailFlipHorizontal">Virar horizontalmente</button>
+								<button class="tool" id="emailFlipVertical">Virar Verticalmente</button>
+								<div class="tool" id="scaleRange">
+									<label for="">Redimensionar</label>
+									<input type="range">
+								</div>
+								<div class="tool" id="rotateRange">
+									<label for="">Rotacionar</label>
+									<input type="range">
+								</div>
+							</div>
+							<div class="col-xs-8">
+								<canvas class="canvas" id="canvasRedesSociais"></canvas>
+							</div>
+						</div>
+
+						<div id="bannerPortalStage">
+							<div class="col-xs-4 tools" id="bannerPortalTools">
+								<button class="tool" id="emailFlipHorizontal">Virar horizontalmente</button>
+								<button class="tool" id="emailFlipVertical">Virar Verticalmente</button>
+								<div class="tool" id="scaleRange">
+									<label for="">Redimensionar</label>
+									<input type="range">
+								</div>
+								<div class="tool" id="rotateRange">
+									<label for="">Rotacionar</label>
+									<input type="range">
+								</div>
+							</div>
+							<div class="col-xs-8">
+								<canvas class="canvas" id="canvasBannerPortal"></canvas>
+							</div>
+						</div>
+-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!--<div class="container-fluid">
 	<div class="row" id="header">
 		<div class="col">Header</div>
 	</div>
@@ -74,10 +261,9 @@
 			  </div>
 			</div>
 		</div>
-		<div class="col-8">
-			<!-- Nav tabs -->
+		<div class="col-8" id="stage">
 			<ul class="nav nav-tabs" role="tablist">
-			  <li class="nav-item">
+			  <li class="nav-item ml-auto">
 			    <a class="nav-link active" data-toggle="tab" href="#emailStage" role="tab">E-mail</a>
 			  </li>
 			  <li class="nav-item">
@@ -88,15 +274,49 @@
 			  </li>
 			</ul>
 
-			<!-- Tab panes -->
 			<div class="tab-content">
-			  <div class="tab-pane active" id="emailStage" role="tabpanel">EMAIL</div>
-			  <div class="tab-pane" id="redesSociaisStage" role="tabpanel">REDES SOCIAIS</div>
-			  <div class="tab-pane" id="bannerPortalStage" role="tabpanel">BANNER PORTAL</div>
+			  <div class="tab-pane active" id="emailStage" role="tabpanel">
+
+			  		<div class="tools row">
+			  			<button class="col tool" id="flipHorizontalBtn">
+			  				Flipar Horizontalmente<br><i class="fa fa-undo" aria-hidden="true"></i>
+			  			</button>
+			  			<button class="col tool" id="flipVerticallBtn">
+			  				Flipar Verticalmente<br><i class="fa fa-repeat" aria-hidden="true"></i>
+			  			</button>
+			  			<div class="col tool" id="scaleRange">
+			  				<label for="">Redimensionar</label>
+			  				<input type="range">
+			  			</div>
+			  			<div class="col tool" id="rotateRange">
+			  				<label for="">Rotacionar</label>
+			  				<input type="range">
+			  			</div>
+			  		</div>
+			
+					<canvas id="canvasEmail" class="canvas">
+						
+					</canvas>
+			  
+			  </div>
+			  <div class="tab-pane" id="redesSociaisStage" role="tabpanel">
+					
+					<canvas id="canvasRedesSociais" class="canvas">
+						
+					</canvas>
+
+			  </div>
+			  <div class="tab-pane" id="bannerPortalStage" role="tabpanel">
+
+					<canvas id="canvasBannerPortal" class="canvas">
+						
+					</canvas>
+
+			  </div>
 			</div>
 		</div>
 	</div>
-</div>
+</div>-->
 
 <script
 			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
