@@ -1,0 +1,18 @@
+#sidebar{
+	background: lightgray;
+
+	padding-left: 0;
+	padding-right: 0;
+
+	.card{
+		.card-header{
+			padding: 0;
+			h5{
+				a{
+					display: block;
+					padding: 15px;
+				}
+			}
+		}
+	}
+}

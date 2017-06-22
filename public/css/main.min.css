@@ -1,3 +1,11 @@
-div { border: solid 1px lightgray; }
+#main { min-height: 100vh; background: gray; }
+
+#header { background: black; display: none; }
+
+#sidebar { background: lightgray; padding-left: 0; padding-right: 0; }
+
+#sidebar .card .card-header { padding: 0; }
+
+#sidebar .card .card-header h5 a { display: block; padding: 15px; }
 
 /*# sourceMappingURL=main.min.css.map */

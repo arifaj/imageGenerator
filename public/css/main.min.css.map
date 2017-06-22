@@ -1,1 +1,1 @@
-{"version":3,"sources":["..\\..\\resources\\scss\\_global.scss"],"names":[],"mappings":"AAAA,MACC,4BAA2B,EAC3B"}
+{"version":3,"sources":["../../resources/scss/_global.scss","../../resources/scss/_header.scss","../../resources/scss/_sidebar.scss"],"names":[],"mappings":"AAAA,QACC,kBAAiB,CACjB,iBAAgB,EAChB;;ACHD,UACC,kBAAiB,CACjB,cAAa,EACb;;ACHD,WACC,sBAAqB,CAErB,gBAAe,CACf,iBAAgB,EAahB;;AAjBD,8BAQG,WAAU,EAOV;;AAfH,mCAWK,eAAc,CACd,cAAa,EACb"}
